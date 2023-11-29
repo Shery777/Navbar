@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+  }
+.container{
+    display: inline-block;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top:10px;
+    padding-left: 90px;
+    padding-right: 90px;
+    background-color: #191919;
+}
+img{
+    width: 100%;
+    cursor: pointer;
+}
+.child1{
+    width: 150px;
+    height: 50px;
+}
+.ul{
+    display: flex;
+    width: 72%;
+    padding-top: 10px;
+}
+.ul ul li{
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+.ul ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding-left: 22px;
+    transition: 1s;
+}
+.ul ul{
+    padding-right: -130px;
+}
+button:hover{
+    background-color: #2878EB;
+    cursor: pointer;
+}
+button{
+    padding: 5px 10px;
+    color: #fff;
+    margin-left: 10px;
+    white-space: nowrap;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 23px;
+    background-color: #f14d5d;
+    border-style: none;
+    border-radius: 5px 5px 5px 5px;
+    width: 120px;
+    margin-left: 25px;
+    margin-top: -5px;
+    transition: 0.5s;
+}
+.fa-angle-right{
+    padding-left: 5px;
+}
+.ul ul li a:hover{
+    color: #f14d5d;
+}
+.mobile-menu-icon{
+    display: none;
+}
+@media(max-width:820px){
+   .nav-links{
+    display: none;
+   }
+   .nav-links-mobile{
+    position: absolute;
+    display: block;
+    list-style: none;
+    left: 0px;
+    top: 75px;
+    background-color: black;
+    transition: all 0.5s ease-out;
+    width: 100%;
+   }
+   ul li{
+    color: #FFFFFF;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    transition: all 0.5 ease;
+   }
+   .mobile-menu-icon{
+    display: block;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    border: none;
+    outline: none;
+    top: 15px;
+    right: 85px;
+   }
+   .div2{
+    display: none;
+   }
+   button{
+    padding: 5px 5px;
+   }
+}
